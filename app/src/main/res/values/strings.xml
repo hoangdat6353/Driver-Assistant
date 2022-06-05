@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">DriverAssist</string>
+    <string name="facebook_app_id">989687391663149</string>
+    <string name="fb_login_protocol_scheme">fb989687391663149</string>
+
+    <string-array name="strSpinnerType">
+        <item> Xe máy </item>
+        <item> Xe hơi </item>
+        <item> Xe tải </item>
+    </string-array>
+    <string-array name="strSpinnerService">
+        <item> Bảo dưỡng </item>
+        <item> Đăng kiểm </item>
+        <item> Mua bảo hiểm </item>
+    </string-array>
+
+    <string-array name="brandBike">
+        <item> Honda </item>
+        <item> Yamaha </item>
+        <item> Suzuki </item>
+        <item> Ducati </item>
+        <item> Kawasaki </item>
+    </string-array>
+
+    <string-array name="brandCar">
+        <item> VinFast </item>
+        <item> Audi </item>
+        <item> Porsche </item>
+        <item> Toyota </item>
+        <item> Nissan </item>
+    </string-array>
+
+
+    <string-array name="brandTruck">
+        <item> Isuzu </item>
+        <item> Hyundai </item>
+        <item> Thaco KIA </item>
+        <item> Hino </item>
+        <item> Mitsubishi Fuso </item>
+    </string-array>
+
+    <string name="apiKey"> AIzaSyDL8QDcUCAcijp2vMKN7fuy6TP38PMvVCU </string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

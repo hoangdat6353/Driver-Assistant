@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="hoangdat.tdtu.driverassist">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DriverAssist">
+        <activity
+            android:name=".RemindControl"
+            android:exported="false"
+            android:label="Quản lý lời nhắc"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Answer"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".EmergencyControl"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".Emergency"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".Notification_Pressed"
+            android:exported="false"
+            android:label="Thông Tin Lời Nhắc" />
+        <activity
+            android:name=".AddRemind"
+            android:exported="false"
+            android:label="Thêm lời nhắc" />
+        <activity
+            android:name=".ChangePartDetails"
+            android:exported="false"
+            android:label="Thông Tin Chi Tiết" />
+        <activity
+            android:name=".ChangeOilDetails"
+            android:exported="false"
+            android:label="Thông Tin Chi Tiết" />
+        <activity
+            android:name=".RefuelDetails"
+            android:exported="false"
+            android:label="Thông Tin Chi Tiết" />
+        <activity
+            android:name=".ChangePart"
+            android:exported="false"
+            android:label="Lịch sử thay thế linh kiện" />
+        <activity
+            android:name=".ChangeOil"
+            android:exported="false"
+            android:label="Lịch sử thay dầu nhớt" />
+        <activity
+            android:name=".Refuel"
+            android:exported="true"
+            android:label="Lịch sử đổ xăng" />
+        <activity
+            android:name=".HistoryChangePart"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".HistoryChangeOil"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".HistoryRefuel"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".VehicleHistory"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".VehicleDetails"
+            android:exported="false"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+        <activity
+            android:name=".AddVehicle"
+            android:exported="false"
+            android:label="Thêm thông tin xe"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DriverAssist.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Driver Assist"
+            android:theme="@style/Theme.DriverAssist.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="hoangdat.tdtu.driverassist.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <receiver
+            android:name=".BootUpReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmBroadcast" />
+    </application>
+
+</manifest>

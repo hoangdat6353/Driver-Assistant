@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "875680666843",
+    "firebase_url": "https://driverassist-770f1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "driverassist-770f1",
+    "storage_bucket": "driverassist-770f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875680666843:android:e16173f0d92b4a5c17e8fe",
+        "android_client_info": {
+          "package_name": "hoangdat.tdtu.driverassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875680666843-gl05hhpv0f2ab8dlce713ac088the9mr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hoangdat.tdtu.driverassist",
+            "certificate_hash": "5d3bce2495d7151a2993a36899ebe95039a6261a"
+          }
+        },
+        {
+          "client_id": "875680666843-vjimqf97pl6grton3krjth0aciiu3psk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoe-CZ7zrp5FWr_RignxLWdwNfA6-28YM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875680666843-vjimqf97pl6grton3krjth0aciiu3psk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
