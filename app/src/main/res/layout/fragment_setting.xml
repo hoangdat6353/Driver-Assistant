@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/governor"
+        android:textColor="#2A5F93"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Driver Assistant" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNearestStation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_semibold"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawableLeft="@drawable/ic_baseline_map_24"
+            android:text="Bản đồ" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:background="#A4A5A6"
+            android:layout_marginLeft="40dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/tvAskForHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="25sp"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawableLeft="@drawable/ic_baseline_help_24"
+            android:text="Cứu trợ" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:background="#A4A5A6"
+            android:layout_marginLeft="40dp"
+            android:layout_height="2dp"/>
+
+
+        <TextView
+            android:id="@+id/tvLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="25sp"
+            android:textColor="#9E4A4A"
+            android:paddingTop="7.5dp"
+            android:paddingBottom="7.5dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+            android:text="Đăng xuất" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/carbanner" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/radius"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imvVehicleImage"
+            android:layout_width="0dp"
+            android:paddingLeft="5dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            app:srcCompat="@drawable/vehicle_item" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvVehicleNameHomeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="22sp"
+                android:textAllCaps="true"
+                android:text="Xe của tôi" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:background="#5C646C"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/tvVehicleBrandHomeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="#189532"
+                android:textSize="15sp"
+                android:text="Yamaha" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:background="#5C646C"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/tvVehicleTypeHomeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#751C27"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Xe máy" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imvDeleteReminder_Item"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

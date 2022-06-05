@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#eff0f4"
+                android:drawableLeft="@drawable/ic_baseline_help_center_24"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingTop="5dp"
+                android:text="Trợ giúp"
+                android:textAllCaps="true"
+                android:textColor="#9E4A4A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/radius"
+                android:padding="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAskName_Answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="5dp"
+                    android:drawablePadding="5sp"
+                    android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+                    android:text="Driver name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#A3AAB1"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/tvRequestAsk_Answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:text="Câu hỏi" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/radius"
+                android:padding="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Trả lời:" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#A3AAB1"
+                    android:layout_height="1dp">
+
+                </View>
+
+                <EditText
+                    android:id="@+id/etEmergency_Answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:background="@drawable/edit_text_bg"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:hint="Nhập câu trả lời"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnResetAnswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B62E6E"
+                    android:layout_marginRight="40dp"
+                    android:text="Hủy" />
+
+                <Button
+                    android:id="@+id/btnSendAnswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0979E8"
+                    android:text="Gửi" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/carbanner" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
