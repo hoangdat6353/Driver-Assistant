@@ -1,0 +1,7 @@
+	Hệ thống trợ lý tài xế gồm đối tượng chính là chủ phương tiện. Tài xế sẽ tương tác được đầy đủ các chức năng có trong hệ thống.
+	Để sử dụng hệ thống thì tài xế cần phải có tài khoản Google, đăng nhập và sau đó sử dụng các chức năng trong ứng dụng, bao gồm: 
+-	Chức năng quản lý lịch sử (lịch sử thay nhớt, lịch sử đổ xăng, lịch sử thay linh kiện): mỗi lịch sử đều có các chức năng cơ bản như xem, thêm, xóa, in và chia sẻ lịch sử. Chức năng này rất hữu dụng, giúp tài xế dễ dàng quản lý và theo dõi những sự kiện đã diễn ra với chiếc xe, từ đó tài xế không cần phải bận tâm ghi nhớ.
+-	Chức năng quản lý phương tiện (xem - thêm - xóa - sửa thông tin phương tiện): chức năng cho phép tài xế thêm hoặc xóa thông tin của phương tiện. Đối với tài xế có nhiều phương tiện di chuyển (ví dụ 2 xe máy, 1 xe hơi) sẽ rất khó khăn nếu không có chức năng này. 
+-	Chức năng nhắc nhở tự động (xem - thêm lời nhắc): khi tài xế có những cuộc hẹn bảo trì xe thì đây là chức năng cho phép tài xế cài đặt lời nhắc, ứng dụng sẽ tự động nhắc nhở theo thời gian đã được cài đặt.
+-	Chức năng kêu gọi cứu hộ (gửi - xem - trả lời yêu cầu): việc gặp những sự cố xảy ra trên đường đi là điều không ai mong muốn, vì thế chức năng này được ra đời với mục đích giúp đỡ các tài xế khi họ cần sự giúp đỡ. Không chỉ thế, tài xế cũng có thể tương tác được với các tài xế grabber khác.
+-	Chức năng hiển thị các điểm lân cận trên bản đồ: chức năng cho phép tài xế xem được các vị trí tiện lợi trên bản đồ như là nơi đỗ xe, cây ATM, trạm xăng… gần nhất.
